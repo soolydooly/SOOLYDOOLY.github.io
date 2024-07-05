@@ -3,20 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Embedded GDevelop Game</title>
+    <title>Floppy Bird</title> <!-- Title of the game -->
     <style>
         body {
             margin: 0;
             overflow: hidden; /* Ensures the game stays within the viewport */
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .game-info {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            max-width: 80%;
         }
         iframe {
-            width: 100vw; /* Full width of the viewport */
-            height: 100vh; /* Full height of the viewport */
-            border: none; /* Removes iframe border */
+            width: 100%;
+            height: 80vh; /* Adjust height as needed */
+            border: none;
         }
     </style>
 </head>
 <body>
+    <div class="game-info">
+        <h1>Floppy Bird</h1>
+        <p><strong>Description:</strong> A fun game where you navigate a bird through obstacles.</p>
+        <p><strong>Controls:</strong> Use the spacebar or click/tap to flap and avoid obstacles.</p>
+    </div>
     <iframe src="game/index.html" frameborder="0"></iframe>
 </body>
 </html>
